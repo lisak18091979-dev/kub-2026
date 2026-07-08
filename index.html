@@ -33,11 +33,9 @@ h1{font-size:30px;font-weight:800;letter-spacing:1px;margin:6px 0;background:lin
 .toolbar button{padding:9px 15px;border-radius:10px;border:1px solid var(--metal);background:#12141a;color:var(--txt);cursor:pointer;font-size:12px;font-weight:600;transition:.2s}
 .toolbar button:hover{border-color:var(--rose);transform:translateY(-1px)}
 .saved{font-size:11px;color:var(--ok);margin-top:6px;height:14px;transition:.3s}
-.switch{position:relative;z-index:3;display:flex;justify-content:flex-start;margin:14px auto 0;max-width:720px;border:1px solid rgba(201,139,160,.3);border-radius:14px;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
-.switch::-webkit-scrollbar{height:4px}
-.switch::-webkit-scrollbar-thumb{background:rgba(201,139,160,.4);border-radius:2px}
-.switch button{flex:1 0 auto;min-width:110px;padding:12px 8px;background:transparent;border:none;color:var(--mut);cursor:pointer;font-size:12px;font-weight:600;letter-spacing:.3px;transition:.25s;white-space:normal}
-@media (max-width:720px){.switch{justify-content:flex-start;border-radius:10px}.switch button{min-width:120px;font-size:11px;padding:10px 6px}.switch button .t2{font-size:8px}}
+.switch{position:relative;z-index:3;display:flex;justify-content:center;flex-wrap:wrap;margin:14px auto 0;max-width:720px;border:1px solid rgba(201,139,160,.3);border-radius:14px;overflow:hidden}
+.switch button{flex:1 1 auto;min-width:0;padding:12px 8px;background:transparent;border:none;color:var(--mut);cursor:pointer;font-size:12px;font-weight:600;letter-spacing:.3px;transition:.25s;white-space:normal}
+@media (max-width:720px){.switch{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(201,139,160,.3);border-radius:12px}.switch button{background:#0f1116;padding:10px 6px;font-size:11px;min-height:56px}.switch button.on{background:linear-gradient(180deg,rgba(176,109,132,.9),rgba(125,74,92,.9))}.switch button .t2{font-size:8.5px;margin-top:2px}}
 .switch button .t2{display:block;font-size:9px;color:var(--brass);margin-top:3px;font-weight:400}
 .switch button.on{background:linear-gradient(180deg,rgba(176,109,132,.9),rgba(125,74,92,.9));color:#fff}
 .switch button.on.c2{background:linear-gradient(180deg,rgba(201,162,74,.85),rgba(140,110,40,.9))}
